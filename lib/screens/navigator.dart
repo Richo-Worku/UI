@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/screens/firstui.dart';
+import 'package:flutter_ui/screens/firstscreen.dart';
+import 'package:flutter_ui/screens/secondscreen.dart';
+import 'package:flutter_ui/screens/thirdscreen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,9 +16,9 @@ class _HomePageState extends State<HomePage> {
   selector(index) {
     switch (index) {
       case 0:
-        return FirstUi();
+        return ThirdScreen();
       case 1:
-        return FirstUi();
+        return Secondpage();
 
       default:
         return FirstUi();
@@ -30,7 +32,7 @@ class _HomePageState extends State<HomePage> {
           child: selector(currentIndex),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Color(0xFFF9A826),
+          selectedItemColor: Color.fromARGB(255, 240, 208, 48),
           showUnselectedLabels: false,
           currentIndex: currentIndex,
           onTap: (value) {
@@ -39,9 +41,9 @@ class _HomePageState extends State<HomePage> {
             });
           },
           items: [
-            BottomNavigationBarItem(icon: Icon(Icons.abc), label: ''),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
             BottomNavigationBarItem(icon: Icon(Icons.map), label: ''),
-            BottomNavigationBarItem(icon: Icon(Icons.pattern), label: ''),
+            BottomNavigationBarItem(icon: Icon(Icons.settings), label: ''),
           ],
         ));
   }

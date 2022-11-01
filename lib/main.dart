@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/screens/firstui.dart';
-import 'package:flutter_ui/screens/homepage.dart';
+import 'package:flutter_ui/screens/firstscreen.dart';
+import 'package:flutter_ui/screens/navigator.dart';
 
 void main() {
   runApp(const MyApp());
