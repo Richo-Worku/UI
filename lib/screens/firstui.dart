@@ -99,7 +99,7 @@ class _FirstUiState extends State<FirstUi> {
         Container(
           padding: EdgeInsets.all(15),
           margin: EdgeInsets.all(10),
-          height: 140,
+          height: 120,
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
             color: Color(0xfffceea7),
@@ -111,6 +111,7 @@ class _FirstUiState extends State<FirstUi> {
             children: [
               Container(
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       child: Text(
@@ -127,7 +128,148 @@ class _FirstUiState extends State<FirstUi> {
                   ],
                 ),
               ),
-              Container()
+              SizedBox(height: 15),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Container(
+                  child: Row(
+                    children: [
+                      Container(
+                        child: Row(
+                          children: [
+                            Container(
+                              margin: EdgeInsets.all(4),
+                              height: 30,
+                              width: 30,
+                              decoration: BoxDecoration(
+                                  color: Color.fromARGB(255, 252, 252, 252),
+                                  borderRadius: BorderRadius.circular(30),
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          'assets/images/images.jpg'))
+                                  //more than 50% of width makes circle
+                                  ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(left: 5),
+                              child: Text(
+                                'Rahel',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                            )
+                          ],
+                        ),
+                        height: 45,
+                        width: 110,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 252, 252, 252),
+                          borderRadius: BorderRadius.circular(30),
+
+                          //more than 50% of width makes circle
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        child: Row(
+                          children: [
+                            Container(
+                              margin: EdgeInsets.all(4),
+                              height: 30,
+                              width: 30,
+                              decoration: BoxDecoration(
+                                  color: Color.fromARGB(255, 252, 252, 252),
+                                  borderRadius: BorderRadius.circular(30),
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          'assets/images/images.jpg'))
+                                  //more than 50% of width makes circle
+                                  ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(left: 5),
+                              child: Text(
+                                'Rahel',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                            )
+                          ],
+                        ),
+                        height: 45,
+                        width: 110,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 252, 252, 252),
+                          borderRadius: BorderRadius.circular(30),
+
+                          //more than 50% of width makes circle
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        child: Row(
+                          children: [
+                            Container(
+                              margin: EdgeInsets.all(4),
+                              height: 30,
+                              width: 30,
+                              decoration: BoxDecoration(
+                                  color: Color.fromARGB(255, 252, 252, 252),
+                                  borderRadius: BorderRadius.circular(30),
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          'assets/images/images.jpg'))
+                                  //more than 50% of width makes circle
+                                  ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(left: 5),
+                              child: Text(
+                                'Rahel',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                            )
+                          ],
+                        ),
+                        height: 45,
+                        width: 110,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 252, 252, 252),
+                          borderRadius: BorderRadius.circular(30),
+
+                          //more than 50% of width makes circle
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+          child: Column(
+            children: [
+              Container(
+                child: Row(
+                  children: [Text('Transaction')],
+                ),
+              ),
+              Container(
+                child: Row(
+                  children: [
+                    Container(),
+                    Container(
+                      child: Text('data'),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         )
