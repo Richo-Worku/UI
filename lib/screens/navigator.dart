@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/screens/firstscreen.dart';
+import 'package:flutter_ui/screens/fourthscreen.dart';
 import 'package:flutter_ui/screens/secondscreen.dart';
 import 'package:flutter_ui/screens/thirdscreen.dart';
 
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   selector(index) {
     switch (index) {
       case 0:
-        return ThirdScreen();
+        return FourthPage();
       case 1:
         return Secondpage();
 
